@@ -1,23 +1,19 @@
-import React from 'react'
+import React from 'react';
 import RatingStars from './RatingStars';
 
-function BookCard() {
-    const rating = 4.5;
+function BookCard({ book }) {
   return (
-    <div>
-    <button></button>
-    <div class='w-52 p-2'>
-        <img src="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg" alt="book" />
-        <div class="columns-2">
-            <RatingStars rating={rating} /> 
-            <p class="text-right font-medium">LKR 1220</p>       
-        </div>
-        <p class="font-bold">The Lean Startup</p>
-        <p class="font-thin text-sm">Eric Ries</p>
-        <p class="w-14 my-2 text-xs text-white text-center bg-sky-500 rounded-md">Friction</p> 
+    <div className='w-52 p-2'>
+      <img className='h-64' src={book.image} alt="book" />
+      <div className="columns-2">
+        <RatingStars rating={book.rating} />
+        <p className="text-right font-medium">{book.price}</p>
+      </div>
+      <p className="font-bold">{book.title}</p>
+      <p className="font-thin text-sm">{book.author}</p>
+      <p className="w-24 my-2 text-xs text-white text-center bg-sky-500 rounded-md">{book.category}</p>
     </div>
-    </div>
-  )
+  );
 }
 
-export default BookCard
+export default BookCard;
