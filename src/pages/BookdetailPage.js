@@ -5,7 +5,6 @@ import NavBar from '../components/NavBar'
 function BookdetailPage() {
   return (
     <>
-    <NavBar/>
     <div className='flex flex-row'>
       <div className='basis-3/6'>
         <img className='h-screen p-5 max-w-screen' src={"https://m.media-amazon.com/images/I/81IGqr-Jd6L._SL1500_.jpg"} alt="book" />
@@ -44,8 +43,8 @@ function BookdetailPage() {
           </div>
           <br/>
           <div className='flex flex-col'>
-            <button className='my-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Add to Cart</button>
-            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Buy Now</button>
+            <button className='my-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Add to Cart</button>
+            <button className='bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded'>Buy Now</button>
           </div>
           
       </div>
